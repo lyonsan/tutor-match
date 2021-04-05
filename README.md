@@ -5,10 +5,12 @@
 | Column             | Type     | option       |
 |--------------------|----------|--------------|
 | email              | string   | null: false  |
-| name               | string   | null: false  |
 | encrypted_password | string   | null: false  |
+| name               | string   | null: false  |
 | gender             | string   | null: false  |
+| country_region     | string   | null: false  |
 | language           | string   | null: false  |
+| japanese_level     | integer  | null: false  |
 | address            | string   | null: false  |
 | job                | string   | null: false  |
 | hobby              | string   | null: false  |
@@ -25,11 +27,11 @@
 | Column             | Type     | option       |
 |--------------------|----------|--------------|
 | email              | string   | null: false  |
-| name               | string   | null: false  |
 | encrypted_password | string   | null: false  |
+| name               | string   | null: false  |
 | gender             | string   | null: false  |
-| japanese_level     | integer  | null: false  |
-| other_language     | string   | null: false  |
+| country_region     | string   | null: false
+| language           | string   | null: false  |
 | address            | string   | null: false  |
 | job                | string   | null: false  |
 | hobby              | string   | null: false  |
