@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root to: 'home#index'
   devise_for :foreigners, skip: :all
   devise_scope :foreigner do
     get 'foreigners/sign_in' => 'foreigners/sessions#new', as: 'new_foreigner_session'
