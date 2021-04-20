@@ -8,6 +8,7 @@ class DeviseCreateTutors < ActiveRecord::Migration[6.0]
       t.string :encrypted_password, null: false, default: ""
       t.string :name,               null: false
       t.string :gender,             null: false
+      t.date :birthday,             null: false
       t.string :country_region,     null: false
       t.string :language,           null: false
       t.string :address,            null: false

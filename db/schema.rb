@@ -17,9 +17,10 @@ ActiveRecord::Schema.define(version: 2021_04_04_094154) do
     t.string "encrypted_password", default: "", null: false
     t.string "name", null: false
     t.string "gender", null: false
+    t.date "birthday", null: false
     t.string "country_region", null: false
     t.string "language", null: false
-    t.integer "japanese_level", null: false
+    t.integer "japanese_level_id", null: false
     t.string "address", null: false
     t.string "job", null: false
     t.string "hobby", null: false
@@ -40,6 +41,7 @@ ActiveRecord::Schema.define(version: 2021_04_04_094154) do
     t.string "encrypted_password", default: "", null: false
     t.string "name", null: false
     t.string "gender", null: false
+    t.date "birthday", null: false
     t.string "country_region", null: false
     t.string "language", null: false
     t.string "address", null: false
