@@ -5,7 +5,7 @@ class Foreigners::RegistrationsController < Devise::RegistrationsController
     devise_parameter_sanitizer.permit(:sign_up,
     keys: [:name, :gender, :birthday, :country_region, :language, :japanese_level_id, :address, :job, :hobby, :concern, :welcome, :free])
   end
-  # before_action :configure_sign_up_params, only: [:create]
+  before_action :configure_sign_up_params, only: [:create]
   # before_action :configure_account_update_params, only: [:update]
 
   # GET /resource/sign_up
