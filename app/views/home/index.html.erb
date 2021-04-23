@@ -1,14 +1,22 @@
 <%= render "shared/header" %>
 <h1>Home</h1>
-<div>
-  <h2>外国人の方の登録</h2>
-  <%= link_to "新規登録", new_foreigner_registration_path %>
-  <%= link_to "ログイン", new_foreigner_session_path %>
-</div>
-<div>
-  <h2>チューターの方の登録</h2>
-  <%= link_to "新規登録", new_tutor_registration_path %>
-  <%= link_to "ログイン", new_tutor_session_path %>
-</div>
-<div>
-</div>
+<% if foreigner_signed_in? %>
+  <div>
+    <%= link_to "ログアウト(外国人)", destroy_foreigner_session_path, method: :delete %>
+  </div>
+<% elsif tutor_signed_in? %>
+  <div>
+    <%= link_to "ログアウト(チューター)", destroy_tutor_session_path, method: :delete %>
+  </div>
+<% else %>
+  <div>
+    <h2>外国人の方の登録</h2>
+    <%= link_to "新規登録", new_foreigner_registration_path %>
+    <%= link_to "ログイン", new_foreigner_session_path %>
+  </div>
+  <div>
+    <h2>チューターの方の登録</h2>
+    <%= link_to "新規登録", new_tutor_registration_path %>
+    <%= link_to "ログイン", new_tutor_session_path %>
+  </div>
+<% end %>
