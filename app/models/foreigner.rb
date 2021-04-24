@@ -1,6 +1,7 @@
 class Foreigner < ApplicationRecord
   extend ActiveHash::Associations::ActiveRecordExtensions
   belongs_to :japanese_level
+  has_many :needs
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable, :registerable,

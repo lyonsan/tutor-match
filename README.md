@@ -42,6 +42,29 @@
 - has_many :chats, through: :chat_tutors
 - has_many :messages
 
+# needs テーブル
+
+| Column             | Type       | option       |
+|--------------------|------------|--------------|
+| foreigner          | references | null: false  |
+| title              | string     | null: false  |
+| detail             | string     | null: false  |
+| remarks            | string     |              |
+#### Association
+- belongs_to :foreigner
+
+# offerings テーブル
+
+| Column             | Type       | option       |
+|--------------------|------------|--------------|
+| foreigner          | references | null: false  |
+| title              | string     | null: false  |
+| detail             | string     | null: false  |
+| remarks            | string     |              |
+#### Association
+- belongs_to :tutor
+
+
 ### chats テーブル
 | Column             | Type            | option           |
 | ------------------ | --------------- | ---------------- |

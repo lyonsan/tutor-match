@@ -18,5 +18,7 @@ Rails.application.routes.draw do
     post 'tutors' => 'tutors/registrations#create', as: 'tutor_registration'
     get 'tutors/password/new' => 'tutors/passwords#new', as: 'new_tutor_password'
   end
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  namespace :foreigners do
+    resources :needs
+  end
 end
