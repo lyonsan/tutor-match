@@ -1,0 +1,2 @@
+module Foreigners::NeedsHelper
+end

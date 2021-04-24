@@ -1,0 +1,22 @@
+<%= render "shared/header" %>
+<h1>needs index</h1>
+<% if foreigner_signed_in? %>
+  <div>
+    <%= link_to "create a new need", new_foreigners_need_path %>
+  </div>
+<% end %>
+<div>
+  <%= link_to "back to top", root_path %>
+</div>
+<div>
+  <% @needs.each do |need| %>
+    <%= link_to "#" do %>
+      <div>
+        <h3><%= need.title %></h3>
+      </div>
+      <div>
+        <%= link_to need.foreigner.name, "#" %>
+      </div>
+    <% end %>
+  <% end %>
+</div>
