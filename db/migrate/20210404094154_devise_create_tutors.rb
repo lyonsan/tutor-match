@@ -15,7 +15,7 @@ class DeviseCreateTutors < ActiveRecord::Migration[6.0]
       t.string :job,                null: false
       t.string :hobby,              null: false
       t.string :motivation,         null: false
-      t.string :free,               null: false
+      t.string :free
 
       ## Recoverable
       t.string   :reset_password_token

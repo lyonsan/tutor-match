@@ -17,6 +17,5 @@ class Tutor < ApplicationRecord
     validates :job
     validates :hobby
     validates :motivation
-    validates :free
   end
 end
