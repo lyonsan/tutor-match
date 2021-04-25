@@ -17,9 +17,8 @@ class Foreigner < ApplicationRecord
     validates :address
     validates :job
     validates :hobby
-    validates :concern
+    validates :wonder
     validates :welcome
-    validates :free
   end
   with_options numericality: { other_than: 1, message: 'を選択してください' } do
     validates :japanese_level_id

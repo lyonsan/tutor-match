@@ -14,9 +14,9 @@
 | address            | string   | null: false  |
 | job                | string   | null: false  |
 | hobby              | string   | null: false  |
-| concern            | string   | null: false  |
+| wonder             | string   | null: false  |
 | welcome            | string   | null: false  |
-| free               | string   | null: false  |
+| free               | string   |              |
 ### Association
 - has_many :chat_foreigners
 - has_many :chats, through: :chat_foreigners
@@ -30,13 +30,13 @@
 | encrypted_password | string   | null: false  |
 | name               | string   | null: false  |
 | gender             | string   | null: false  |
-| country_region     | string   | null: false
+| country_region     | string   | null: false  |
 | language           | string   | null: false  |
 | address            | string   | null: false  |
 | job                | string   | null: false  |
 | hobby              | string   | null: false  |
 | motivation         | string   | null: false  |
-| free               | string   | null: false  |
+| free               | string   |              |
 ### Association
 - has_many :chat_tutors
 - has_many :chats, through: :chat_tutors

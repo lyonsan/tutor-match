@@ -15,9 +15,9 @@ class DeviseCreateForeigners < ActiveRecord::Migration[6.0]
       t.string :address,            null: false
       t.string :job,                null: false
       t.string :hobby,              null: false
-      t.string :concern,            null: false
+      t.string :wonder,            null: false
       t.string :welcome,            null: false
-      t.string :free,               null: false
+      t.string :free
 
       ## Recoverable
       t.string   :reset_password_token

@@ -24,9 +24,9 @@ ActiveRecord::Schema.define(version: 2021_04_24_070158) do
     t.string "address", null: false
     t.string "job", null: false
     t.string "hobby", null: false
-    t.string "concern", null: false
+    t.string "wonder", null: false
     t.string "welcome", null: false
-    t.string "free", null: false
+    t.string "free"
     t.string "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"

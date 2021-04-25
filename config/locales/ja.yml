@@ -1,0 +1,34 @@
+ja:
+  time:
+    formats:
+      default: "%Y/%m/%d %H:%M:%S"
+
+  activerecord:
+    attributes:
+      foreigner:
+        name: 名前
+        birthday: 誕生日
+        japanese_level_id: 日本語レベル
+        gender: 性別
+        country_region: 出身国/地域
+        language: 母国語
+        address: 現住所
+        job: 仕事
+        hobby: 趣味
+        wonder: 懸念
+        welcome: 歓迎要件
+        free: フリー記載欄
+      tutor:
+        name: 名前
+        birthday: 誕生日
+        gender: 性別
+        country_region: 出身国/地域
+        address: 現住所
+        job: 仕事
+        hobby: 趣味
+        motivation: 動機
+        free: フリー記載欄
+      need:
+        title: タイトル
+        detail: 詳細
+        remarks: 備考
