@@ -14,7 +14,7 @@
 | address            | string   | null: false  |
 | job                | string   | null: false  |
 | hobby              | string   | null: false  |
-| concern            | string   | null: false  |
+| wonder             | string   | null: false  |
 | welcome            | string   | null: false  |
 | free               | string   | null: false  |
 ### Association

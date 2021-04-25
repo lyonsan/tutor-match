@@ -12,7 +12,7 @@ FactoryBot.define do
     address               { Faker::Address.city }
     job                   { Faker::Job.title }
     hobby                 { Faker::Lorem.sentence }
-    concern               { 'concern' }
+    wonder                { Faker::Lorem.sentence }
     welcome               { Faker::Lorem.sentence }
     free                  { Faker::Lorem.sentence }
   end
